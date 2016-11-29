@@ -1,6 +1,0 @@
-.env
-.env.*
-!.env.default
-db.sqlite
-node_modules/
-npm-debug.log
