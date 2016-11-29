@@ -16,9 +16,6 @@ Command line interface (CLI) tool for the [Flux Capacitor](https://github.com/fl
 # Set up a new flux capacitor instance
 flux init [<target directory>] [--database <connection url>]
 
-# Print event count, most recent event timestamp
-flux status
-
 # Dispatch an event
 flux dispatch <event type | complete JSON event> [--payload <JSON payload>] [--meta <JSON meta>] [--raw]
 
@@ -27,12 +24,6 @@ flux log [[<event id>]..[<event id>]] [--count <int>] [--raw]
 
 # Show some event
 flux show <event id> [--raw]
-
-# Show some collection or collection instance
-flux show /<collection>[/<id>] [--raw]
-
-# Run SQL query or open REPL (if no query passed)
-flux query [<SQL query>] [--raw]
 ```
 
 
