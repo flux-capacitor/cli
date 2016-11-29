@@ -29,7 +29,7 @@ flux show <event id> [--raw]
 
 ## Flux Capacitor
 
-Find it here 👉 [Flux Capacitor](https://github.com/flux-capacitor/flux-capacitor)
+Find the main documentation here 👉 [Flux Capacitor](https://github.com/flux-capacitor/flux-capacitor)
 
 
 ## License
