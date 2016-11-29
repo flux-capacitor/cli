@@ -1,6 +1,6 @@
 {
   "name": "flux-capacitor-cli",
-  "version": "0.2.0",
+  "version": "0.1.0",
   "license": "MIT",
   "bin": {
     "flux": "./lib/cli.js"
@@ -31,8 +31,8 @@
     "node": ">= 4.0"
   },
   "author": "Andy Wermke <andy@dev.next-step-software.com>",
-  "repository": "flux-capacitor/flux-capacitor",
-  "bugs": "https://github.com/flux-capacitor/flux-capacitor/issues",
+  "repository": "flux-capacitor/cli",
+  "bugs": "https://github.com/flux-capacitor/cli/issues",
   "devDependencies": {
     "ava": "^0.16.0",
     "babel-cli": "^6.18.0",
