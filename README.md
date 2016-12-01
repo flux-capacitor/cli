@@ -17,7 +17,8 @@ Command line interface (CLI) tool for the [Flux Capacitor](https://github.com/fl
 flux init [<target directory>] [--database <connection url>]
 
 # Dispatch an event
-flux dispatch <event type | complete JSON event> [--payload <JSON payload>] [--meta <JSON meta>] [--raw]
+flux dispatch <event type> [--payload <json payload> [--meta <json meta>]] [--raw]
+flux dispatch <complete event json> [--raw]
 
 # Show event log
 flux log [[<event id>]..[<event id>]] [--count <int>] [--raw]
