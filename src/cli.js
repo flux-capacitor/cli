@@ -8,13 +8,22 @@ import { highlightFirstLine } from './util/cli'
 
 const cli = meow(`
   Usage
+    Initialize new flux capacitor
     $ flux init [<target directory>] [--database=<DB connection URL>]
+
+    Dispatch an event
+    $ flux dispatch <event type> [<event payload json> [<event meta json>]]
+    $ flux dispatch <event json>
+
+    Print my version
+    $ flux --version
 
   Commands
     init        Install a fresh flux capacitor instance in the current directory.
+    dispatch    Dispatch a new event (apply a database change).
 `)
 
-const [ command, args = [] ] = cli.input
+const [ command, ...args ] = cli.input
 
 if (!command || !commands[ command ]) {
   if (command) {
