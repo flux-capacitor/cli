@@ -34,7 +34,7 @@
   "repository": "flux-capacitor/cli",
   "bugs": "https://github.com/flux-capacitor/cli/issues",
   "devDependencies": {
-    "ava": "^0.16.0",
+    "ava": "^0.17.0",
     "babel-cli": "^6.18.0",
     "babel-preset-es2015-node4": "^2.1.0",
     "babel-preset-es2016": "^6.16.0",
