@@ -53,6 +53,7 @@
     "execa": "^0.5.0",
     "fs-extra": "^1.0.0",
     "json-update": "^3.0.0",
+    "json5": "^0.5.1",
     "listr": "^0.7.0",
     "log-symbols": "^1.0.2",
     "meow": "^3.7.0",
