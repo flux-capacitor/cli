@@ -1,4 +1,6 @@
+import { locatePackageJson } from '../util/fs'
 import { parse as parseJson, prettyPrint, prettySerialize } from '../util/json'
+import { instantiateStore } from '../util/store'
 
 export default dispatchCommand
 
@@ -24,13 +26,13 @@ async function dispatchCommand (options, args, print = console.log) {
     }
   }
 
-  // TODO
-  const createdEvent = event
+  const store = await instantiateStore(await locatePackageJson())
+  const createdEvents = await store.dispatch(event)
 
   if (rawOutput) {
-    print(prettySerialize(createdEvent))
+    print(prettySerialize(createdEvents))
   } else {
-    print('Successfully dispatched event:')
-    print(prettyPrint(createdEvent))
+    print(`Successfully dispatched event${createdEvents.length === 1 ? '' : 's'}:`)
+    createdEvents.forEach((createdEvent) => print(prettyPrint(createdEvent)))
   }
 }
