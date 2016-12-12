@@ -15,6 +15,9 @@ const rootReducer = require('./reducers')
 module.exports = initStore
 
 /**
+ * This function must remain without parameters or the CLI tool will crash when
+ * trying to call it.
+ *
  * @return {Promise<Store>}
  */
 function initStore () {

@@ -104,7 +104,7 @@ async function locateOrCreatePackageJson (searchStartDirPath, print) {
     return filePath
   } catch (error) {
     const filePath = path.join(searchStartDirPath, 'package.json')
-    print(info(`Creating empty ${filePath}...`))
+    print(info(`Creating fresh ${filePath}...`))
     await fs.writeFile(filePath, '{}\n')
     return filePath
   }
